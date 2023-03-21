@@ -1,6 +1,6 @@
 import Button from '../components/Button';
 import Header from '../components/Header';
-import Image from  'next/Image'
+import Image from  'next/image'
 import Layout from '../components/Layout';
 
 import { getAllVehicles } from '../lib/api';

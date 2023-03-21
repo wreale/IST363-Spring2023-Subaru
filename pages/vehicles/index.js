@@ -1,6 +1,6 @@
 import Image from  'next/Image';
 import Layout from '../../components/Layout';
-import Link from 'next/Link';
+import Link from 'next/link';
 
 
 import { getAllVehicles } from '../../lib/api';
