@@ -1,39 +1,18 @@
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+
 import Layout from '../components/Layout';
 
-import { 
-  //getAllVehicles, 
-  //getAllColors 
-} from '../lib/api';
-
-export async function getStaticProps() {
-  // Get external data from the file system, API, DB, etc.
-  //const data = getAllVehicles();
- //const colors = getAllColors();
-
-  // The value of the `props` key will be
-  //  passed to the `Home` component
-  return {
-    props: {
-      //data,
-      //colors
-    }
-  }
-}
-
-const Homepage = ({
-  data, 
-  //colors
-}) => {
-  console.log({data});
+const Homepage = () => {
+  const router = useRouter();
+  
+  useEffect(() => {
+    router.push('/vehicles');
+  }, [])
+  
   return <Layout>
-    
-    {
-      //<Showcase />
-     // <CarColorPicker colors={colors}/>
-    // <LocationPicker />
-     //<SectionCTA />
-    }
-    
+
   </Layout>
 }
+
 export default Homepage
